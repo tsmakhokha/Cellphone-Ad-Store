@@ -1,0 +1,221 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CellphoneAdStore.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/bootstrap-337.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="font-awsome/css/font-awesome.min.css" rel="stylesheet" />
+
+
+    <%-- scripts --%>
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+
+<script src="js/jquery-331.min.js"></script>
+<script src="js/bootstrap-337.min.js"></script>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+ 
+        <div class="topnav"><a href="#"><img src="images/icon.png" width="150" height="50" />
+  <a class="active" href="index.aspx">Home</a>
+            
+    <asp:LinkButton style="color:white;" class="nav-link" ID="LinkButton99" runat="server" OnClick="LinkButton99_Click">View Cellphones</asp:LinkButton>
+
+  <a style="color:white;" href="aboutus.aspx">About US</a>
+  <a style="color:white;" href="contact.aspx">Contact</a>
+  
+            <div class="topnav-right">
+    
+    <a href="mailto:tsmakhokha@gmail.com">tsmakhokha@gmail.com</a>
+    <a style="color:white;" href="#"><i class="fa fa-facebook"></i></a>
+    <a style="color:white;" href="#"><i class="fa fa-linkedin"></i></a>
+    <a style="color:white;" href="#"><i class="fa fa-twitter"></i></a>
+    <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" Visible="False">Logout</asp:LinkButton>
+    
+  </div>
+</div>
+
+
+
+
+        <!-- main content holder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <footer>
+            
+            
+            
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server" OnClick="LinkButton6_Click" OnClientClick="AdminLogin.aspx">Admin Login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server" OnClick="LinkButton11_Click" Visible="False">Brand Management</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server" OnClick="LinkButton12_Click" Visible="False">Model Management</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server" OnClick="LinkButton8_Click" Visible="False">Add New Cellphones</asp:LinkButton>
+                            &nbsp;
+                             </p>
+ 
+                    </div>
+ 
+                </div>
+            </div>
+           
+            <div id="footer02"> <!--footer -->
+
+   <div class="container">
+   
+       <div class="row">
+       
+         <div class="col-sm-6 col-md-3">
+             
+             <h2 style="color:#FFFFFF">Address</h2>
+             
+         <ul> <!--list -->
+           <li><a href="#">Unit 4, 158 Jan Smuts Ave
+Johannesburg</a></li>
+
+         </ul> <!-- list ends -->
+         <hr>
+         <h2 style="color:#FFFFFF">Contact US</h2>
+         <ul>
+            <li><a href="#">Cell: 0791634375</a></li>
+            <li><a href="mailto:tsmakhokha@gmail.com">tsmakhokha@gmail.com</a></li>
+         
+         </ul>
+         
+         <hr class="hidden-md hidden-lg hidden-sm">
+         
+         </div>
+         
+         <div class="col-sm-6 col-md-3">
+         
+             <h2 style="color:#FFFFFF">Menu</h2>
+             
+             <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li> <asp:LinkButton class="footerlinks" ID="LinkButton21" runat="server" OnClick="LinkButton21_Click">Admin Login</asp:LinkButton>
+                 </li>         
+               <li> <asp:LinkButton class="footerlinks" ID="LinkButton22" runat="server" OnClick="LinkButton22_Click">View Cellphones</asp:LinkButton>
+                 </li> 
+             </ul>
+         
+          <hr class="hidden-md hidden-lg">
+
+         </div>
+         
+         <div class="col-sm-6 col-md-3">
+         
+            <h3 style="color:#FFFFFF">Video Feed:</h3>
+            
+                <p style="color:#808080">
+                
+                <strong>
+                video here <br>
+                Sandton City <br>
+                South Africa <br>
+                Tel: 011 234 5678<br>
+                Email: tsmakhokha@gmail.com
+                </strong>
+                
+                
+                </p>
+                
+                <a href="#">Get in touch</a>
+         
+         <hr class="hidden-md hidden-lg">
+         
+         </div>
+         
+         <div class="col-sm-6 col-md-3">
+            <h3 style="color:#FFFFFF">Sign up for newsletter</h3>
+            <p class="text-muted">
+              Get latest news and promotions straight to your phone. Sign up for newsletter 
+            </p>
+            
+            <form action="get" method="post"> <!-- input form-->
+                <div class="input-group">
+                 
+                   <input type="text" class="form-control" name="email">
+                       <span class="input-group-btn">
+                       
+                            <input type="submit" value="subscribe" class="btn btn-default">
+                       
+                       </span>
+                   
+                </div>
+            
+            </form> <!-- form ends -->
+            
+            <hr>
+            
+            <h4 style="color:#FFFFFF">Recent Articles</h4>
+            
+<p class="text-muted">
+              Huawei overtakes Samsung and Iphone on sales globally... <a href="#">Read more</a>
+            </p>
+    <p class="text-muted">
+              Nokia set to release a new android powered smartphone... <a href="#">Read more</a> 
+            </p>
+         </div>
+         
+       </div>
+   
+   </div>
+
+</div> <!-- footer ends -->
+
+<div id="copyright"> <!-- copyright -->
+
+   <div class="container">
+   
+      <div class="col-md-6">
+      
+      <p class="pull-left">&copy; 2020  TwoteStore</p>
+      
+      </div>
+      
+      <div class="col-md-6">
+      
+      <p class="pull-right">Developed by: <a href="https://www.linkedin.com/in/tshivhidzo-makhokha-54ab6111b/">Tshivhidzo</a></p>
+      
+      </div>
+ 
+   </div>
+
+</div>
+
+
+        </footer>
+
+
+    </form>
+</body>
+</html>
